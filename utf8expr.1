@@ -1,0 +1,41 @@
+.Dd May 21, 2012 
+.Dt UTF8EXPR 1
+.Os
+.
+.Sh NAME
+.Nm utf8expr
+.Nd evalute UTF-8 expressions
+.
+.Sh SYNOPSIS
+.Nm
+.Bk -words
+EXPRESSION
+.
+.Sh DESCRIPTION
+.Bd -filled
+.Nm
+will evalute a subset of the expr(1) syntax with taking care
+of UTF-8 characters.
+.Ed
+. 
+.Sh EXPRESSIONS 
+.Pp
+.Bl -tag -width ".Fl test Ao Ar string Ac"
+.
+.It substr STRING POS LENGTH
+substring of STRING, POS counted from 1
+.
+.It index STRING CHARS
+index in STRING where any CHARS is found, or 0
+.
+.It length STRING
+length of STRING
+. 
+.Sh AUTHORS
+See the LICENSE file for the authors of this software.
+.
+.Sh LICENSE
+.Nm
+is released under the MIT/X Consortium License.
+.
+
