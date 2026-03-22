@@ -150,10 +150,10 @@ main(int argc, char *argv[])
 	case 'i':
 		if (argc < 4)
 			usage();
-		printf("%ld\n", utf8index(argv[2], argv[3]));
+		printf("%zu\n", utf8index(argv[2], argv[3]));
 		break;
 	case 'l':
-		printf("%ld\n", utf8strlen(argv[2]));
+		printf("%zu\n", utf8strlen(argv[2]));
 		break;
 	case 's':
 		if (argc < 5)
